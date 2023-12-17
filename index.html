@@ -27,7 +27,7 @@
    ================================================== -->   
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
-
+	<script src="js/add.on.js"></script>
    <!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="logo.png">
@@ -77,7 +77,7 @@
 	   			<h1>Jernic Roy</h1>
 
 	   			<p class="intro-position">
-	   				<span>Final year PostGraduate</span>
+	   				<span>Software Engineer</span>
 	   				<span>Full Stack Developer</span> 
 	   			</p>
 
@@ -108,7 +108,7 @@
    		<div class="col-twelve">
 
    			<h5>About</h5>
-   			<h1>Vanakam</h1>
+   			<h1>Jernic Roy</h1>
 
    			<div class="intro-info">
 
@@ -136,13 +136,13 @@
    					<strong>Birth Date:</strong>
    					<span>May 05 </span>
    				</li>
-   				<li>
+   				<!-- <li>
    					<strong>Pronouns:</strong>
    					<span>He, Him</span>
-   				</li>
+   				</li> -->
    				<li>
    					<strong>Email:</strong>
-   					<span>jernicroy2000@gmail.com</span>
+   					<span><a href="mailto:jesusjernicr@gmail.com">jesusjernicr@gmail.com</a></span>
    				</li>
 
    			</ul> <!-- /info-list -->
@@ -152,20 +152,25 @@
    		<div class="col-six tab-full">
 
    			<h3>Skills</h3>
-   			<p>I was introduced to coding only after I joined college. My college coursework includes languages like C, C++, Java and Python. Besides, I have developed projects using Java and the MySQL. I have worked with technologies such as HTML/CSS, Git and Linux.</p>
-
+   			<!-- <p>I was introduced to coding only after I joined college. My college coursework includes languages like C, C++, Java and Python. Besides, I have developed projects using Java and the MySQL. I have worked with technologies such as HTML/CSS, Git and Linux.</p> -->
+				<ul>
+					<li><b>Backend Tech:</b> Java EE, Spring Boot, Apache Spark, Kafka </li>
+					<li><b>Frontend Tech:</b> Angular, HTML, Javascript </li>
+					<li><b>Database:</b> Oracle SQL, MySQL, Neo4j </li>
+					&nbsp;
+				</ul>
 				<ul class="skill-bars">
 				   <li>
-				   	<div class="progress percent50"><span>50%</span></div>
-				   	<strong>Frontend </strong>
+				   	<div class="progress percent60"><span>60%</span></div>
+				   	<strong>Angular </strong>
 				   </li>
 				   <li>
-				   	<div class="progress percent60"><span>60%</span></div>
-				   	<strong>Backend </strong>
+				   	<div class="progress percent80"><span>80%</span></div>
+				   	<strong>Java - Spring Boot </strong>
 				   </li>
 				   <li>
 				   	<div class="progress percent70"><span>70%</span></div>
-				   	<strong>Java</strong>
+				   	<strong>Database SQL</strong>
 				   </li>
 				   <!--<li>
 				   <div class="progress percent60"><span>60%</span></div>
@@ -323,7 +328,7 @@ software features</li>
 					</div>
 
 					<div class="timeline-content">
-						<h4>Scott Christian College of Arts and Science</h4>
+						<h4>Scott Christian College</h4>
 						<p>
 							<strong style="color: black">Department:</strong> Computer Science<br>
 						 <strong style="color: black">Courses: </strong>Advanced Java Programming, Mathematical Foundation of Computers, Design and Analysis of Algorithm, Machine Learning<br>
@@ -346,7 +351,7 @@ software features</li>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Scott Christian College of Arts and Science</h4>
+	   					<h4>Scott Christian College</h4>
 	   					<p>
 	   						<strong style="color: black">Department:</strong> Computer Science<br>
 							<strong style="color: black">Courses: </strong>Data Structures, Computer Networks, Discrete Mathematics, Computer Graphics, Relational Database Mnagement System, Operating System etc...<br>
@@ -431,7 +436,52 @@ software features</li>
 
    		<div class="col-twelve">
 
+			
 			<div class="col-six tab-full projects">
+				<h3 class="title-black">Instagram Birthday Wisher</h3>	
+
+				<h5 class="project-type">Python Bot</h5>
+				<p>
+					 A birthday wishing bot that goes through the list of birthdays of family and friends, and sends an instant message to the instagram profile of the person celebrating their birthday.<br>
+			 </p>
+			 <p><a href="https://github.com/jernicroy/Birthday-Wishing-on-Instagram-Bot">Github</a></p>
+			</div>
+
+			<div class="col-six tab-full projects">
+				<h3 class="title-black">Crime Scene Analyzer</h3>
+
+				<h5 class="project-type">MatLAb - Image Processing</h5>
+				<p>
+					An Application made with MatLab that contains an UserInterface, where the suspected image <br>
+					provided and searches an image pattern matches to the data along with which creates an
+					dataSet.
+				</p> 
+				<p><a href="https://github.com/jernicroy/Crime-scene-analyzer">Github</a>
+			</div>
+
+		   <div class="col-six tab-full projects">
+			<h3 class="title-black">Face Recognition Attendance System</h3>	
+			<h5 class="project-type">Python - Machine Learning</h5>
+			<p>
+				The Real-time face recognition attendance system is a highly effective solution for
+				attendance management in various educational institutions and workplaces.										 </p>
+			 <p><a href="javascript:void(0)">Github</a></p>
+		</div>
+
+			<div class="col-six tab-full projects">
+					
+				<h3 class="title-black">Fake News Detection</h3>
+
+				<h5 class="project-type">Python</h5>
+				<p>
+					Fake News Detection works on the principle of Machine Learning. <b>Passive Aggressive algorithms</b> are online learning<br>
+					 algorithms and <b>TfidfVectorizer</b> <br>
+					A Model is trained by the Real and Fake news Dataset and Classify the Real and Fake News.
+				</p> 
+				<p><a href="https://github.com/jernicroy/Fake-News-Detection">Github</a>
+			</div>
+
+			<!-- <div class="col-six tab-full projects">
 					
 				<h3 class="title-black">Number Guessing Game</h3>
 
@@ -442,84 +492,9 @@ software features</li>
 					Based on the number of attempts, the scores will be displayed.
 				</p> 
 				<p><a href="https://github.com/jernicroy/Number_Game">Github</a>
-			</div>
+			</div> -->
 
-			<div class="col-six tab-full projects">
-					
-				<h3 class="title-black">Fake News Detection</h3>
-
-				<h5 class="project-type">Python</h5>
-				<p>
-					Fake News Detection works on the principle of Machine Learning. Passive Aggressive algorithms are online learning<br>
-					 algorithms and TfidfVectorizer <br>
-					A Model is trained by the Real and Fake news Dataset and Classify the Real and Fake News.
-				</p> 
-				<p><a href="https://github.com/jernicroy/Fake-News-Detection">Github</a>
-			</div>
  			<!--checking code-->
-	         	<div class="col-six tab-full projects">
-					
-					<h3 class="title-black">Crime Scene Analyzer</h3>
-
-					<h5 class="project-type">MatLAb</h5>
-					<p>
-						An Application made with MatLab that contains an UserInterface, where the suspected image <br>
-						provided and searches an image pattern matches to the data along with which creates an
-						dataSet.
-					</p> 
-					<p><a href="https://github.com/jernicroy/Crime-scene-analyzer">Github</a>
-				</div>
-				<div class="col-six tab-full projects">
-					<h3 class="title-black">Instagram Birthday Wisher</h3>	
-
-					<h5 class="project-type">Python Bot</h5>
-					<p>
-				 		A birthday wishing bot that goes through the list of birthdays of family and friends, and sends an instant message to the instagram profile of the person celebrating their birthday.<br>
-				 </p>
-				 <p><a href="https://github.com/jernicroy/Birthday-Wishing-on-Instagram-Bot">Github</a></p>
-				</div>
-			 	<!--
-					<div class="col-six tab-full projects">
-
-		   			<h3 class="title-black">Books & Authors API</h3>	
-
-		   			<h5 class="project-type">REST API</h5>
-		   			<p>
-		            A REST API made with node.js that contains a list of books and authors, along with rating.<br>
-		            </p>
-		            <p><a href="https://github.com/jernicroy/">Github</a>  &nbsp;</p>
-		   		</div>
-				-->
-
-		   		<!--
-				<div class="col-six tab-full projects">
-		   			<h3 class="title-black">College Resources</h3>	
-
-		   			<h5 class="project-type">Flutter App</h5>
-		   			<p>
-		            The app is a collection of all the materials of the college syllabus.
-		        </p>
-		        <p><a href="https://github.com/jernicroy/">Github</a></p>
-		   		</div>
-				-->
-		   		
-
-
-
-		   	<!--	<div class="col-six tab-full projects" >
-		   			<h3 class="title-black">Rain Alerter</h3>	
-
-		   			<h5 class="project-type">Python Bot</h5>
-		   			<p>
-		            An application that checks the weather condition for the next 12 hours and sends a message to the registered number whether to carry a sunglass (if it is sunny), or an umbrella (if it rains).
-		        </p>
-		        <p><a href="https://github.com/jernicroy/">Github</a></p>
-		   		</div>
-			-->
-	         <!-- /portfolio-wrapper --> 
-
-
-   			<!--checking code-->
 
    		</div>  <!-- /twelve -->   
 
@@ -567,7 +542,7 @@ software features</li>
 
    			<h5>Email Me At</h5>
 
-   			<p>jernicroy2000@gmail.com		     
+   			<p>jesusjernicr@gmail.com		     
 			   </p>
 
    		</div>
@@ -604,7 +579,7 @@ software features</li>
      		<div class="col-six tab-full pull-right social">
 
      			<ul class="footer-social">        
-			             <li><a href="https://www.linkedin.com/in/jernic-roy-a-a94b091b6/"><i class="fa fa-linkedin"></i></a></li>
+			             <li><a href="https://www.linkedin.com/in/jesus-jernic-roy/"><i class="fa fa-linkedin"></i></a></li>
 				         <li><a href="https://github.com/jernicroy"><i class="fa fa-github"></i></a></li>
 				         <li><a href="https://twitter.com/jernic_roy"><i class="fa fa-twitter"></i></a></li>
 				         <li><a href="https://www.instagram.com/jernic_roy/"><i class="fa fa-instagram"></i></a></li>
@@ -616,8 +591,8 @@ software features</li>
 
       	<div class="col-eight tab-full">
 	      	<div class="copyright">
-		        	<span>© Copyright 2022 </span> 
-		        	<span>Design by <a href="https://jernicroy.blogspot.com/">Jernic roy</a></span>         	
+		        	<span>© Copyright 2023 </span> 
+		        	<span>Design by <a href="https://www.linkedin.com/in/jesus-jernic-roy/" target="_blank">Jernic roy</a></span>         	
 		         </div>		                  
 	      	</div>
 
