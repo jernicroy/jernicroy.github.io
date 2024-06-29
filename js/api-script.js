@@ -29,19 +29,18 @@ $.ajax({
   }
 });
 
-$.ajax({
-  method: 'GET',
-  url: 'https://portfolio-render-59ha.onrender.com/api/visitor/fetch',
-  // headers: { 'X-Api-Key': 'uIjPHEmZg/txZJsIRZf1+A==51MrQStdZiI0jrKy'},
-  contentType: 'application/json',
-  success: function(result) {
-      // var jsonData = JSON.parse(result);
-      console.log('Count: ',result);
-      // count.innerText = result.value;
-
-  },
-  error: function ajaxError(exception) {
-      console.error('Error: ', exception.responseText);
-  }
-});
+// $.ajax({
+//   method: 'GET',
+//   url: 'https://portfolio-render-59ha.onrender.com/api/visitor/fetch',
+//   // headers: { 'X-Api-Key': 'uIjPHEmZg/txZJsIRZf1+A==51MrQStdZiI0jrKy'},
+//   contentType: 'application/json',
+//   success: function(result) {
+//       // var jsonData = JSON.parse(result);
+//       console.log('Count: ',result);
+//       // count.innerText = result.value;
+//   },
+//   error: function ajaxError(exception) {
+//       console.error('Error: ', exception.responseText);
+//   }
+// });
 
