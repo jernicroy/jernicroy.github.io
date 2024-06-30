@@ -14,33 +14,63 @@ function visitCount(){
 }
 
 
+/// base API for Visitor Config
 $.ajax({
+  url: 'https://portfolio-render-59ha.onrender.com/api/visitor/config',
   method: 'GET',
-  url: 'https://api.api-ninjas.com/v1/counter?hit=true&id=visits_2',
-  headers: { 'X-Api-Key': 'uIjPHEmZg/txZJsIRZf1+A==51MrQStdZiI0jrKy'},
   contentType: 'application/json',
-  success: function(result) {
-      console.log('Count: ',result);
-      // var jsonData = JSON.parse(result);
-      count.innerText = result.value;
+  success: function(response) {
+    const visitApi = response.visitorUrl;
+    const apiKey = response.visitorKey;
+    var fetchIpURL = response.fetchIpURL;
+    var baseUrl = response.baseURL;
+
+    console.log("API URL: ", visitApi," API KEY: ",apiKey)
+
+    // Now use the apiUrl and apiKey to make the desired API request for the Visit Count
+    $.ajax({
+      url: `${visitApi}`,
+      method: 'GET',
+      headers: {'X-Api-Key': `${apiKey}`},
+      contentType: 'application/json',
+      success: function(result) {
+        console.log('Data:', result);
+        count.innerText = result.value;
+      },
+      error: function ajaxError(exception) {
+        console.error('Error: ', exception.responseText);
+      }
+    });
+
+    // API to fetch the User IP informations
+    $.ajax({
+      url: `${fetchIpURL}`,
+      method: 'GET',
+      contentType: 'application/json',
+      success: function(ipResponse) {
+        console.log('Data:', ipResponse);
+
+        // POST API to Save all the Visitors Informations
+        $.ajax({
+          url: `${baseUrl}api/visitor/save`,
+          method: 'POST',
+          contentType: 'application/json',
+          data: JSON.stringify(ipResponse),
+          success: function(response) {
+            console.log('INSIDE SAVE Data:', response);
+             
+          },
+          error: function ajaxError(exception) {
+            console.error('Error: ', exception.responseText);
+          }
+        });
+      },
+      error: function ajaxError(exception) {
+        console.error('Error: ', exception.responseText);
+      }
+    });
   },
   error: function ajaxError(exception) {
-      console.error('Error: ', exception.responseText);
+    console.error('Error: in config API call ', exception.responseText);
   }
 });
-
-// $.ajax({
-//   method: 'GET',
-//   url: 'https://portfolio-render-59ha.onrender.com/api/visitor/fetch',
-//   // headers: { 'X-Api-Key': 'uIjPHEmZg/txZJsIRZf1+A==51MrQStdZiI0jrKy'},
-//   contentType: 'application/json',
-//   success: function(result) {
-//       // var jsonData = JSON.parse(result);
-//       console.log('Count: ',result);
-//       // count.innerText = result.value;
-//   },
-//   error: function ajaxError(exception) {
-//       console.error('Error: ', exception.responseText);
-//   }
-// });
-
