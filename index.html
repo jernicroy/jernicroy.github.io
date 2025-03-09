@@ -41,6 +41,7 @@
 
    <!-- script
    ================================================== -->   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
 	<script src="js/add.on.js"></script>
@@ -81,7 +82,25 @@
 	<!-- intro section
    ================================================== -->
    <section id="intro">   
-
+	<div id="chatModal" class="modal hidden">
+		<div class="modal-dialog">
+		  <div class="modal-header">
+			<h5 class="modal-title"><b>Chat</b></h5>
+			<button class="modal-close" onclick="closePopup()">×</button>
+		  </div>
+		  <div class="modal-body">
+			<input id="question" type="text" class="form-control" style="width: 100%;" placeholder="Ask me anything...">
+			<div id="responseBox">
+				<p id="typing" class="typing" style="display: none;">Typing...</p>
+				<div id="response" class="response" style="display: none;"></div>
+			</div>
+		  </div>
+		  <div class="modal-footer">
+			<button onclick="closePopup()">Close</button>
+			<button class="btn btn-primary" style="background: lightskyblue;" onclick="sendMessage()">Submit</button>
+		  </div>
+		</div>
+	</div>
    	<div class="intro-overlay"></div>	
 
    	<div class="intro-content">
@@ -98,7 +117,7 @@
 	   			</p>
 
 	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
-
+	   			<a class="button stroke" title="" onclick="openPopup()">Ask Me</a>
 	   		</div>  
    			
    		</div>   		 		
@@ -640,6 +659,7 @@
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
    <script src="js/api-script.js"></script>
+   <script src="js/generative-script.js"></script>
 
 </body>
 

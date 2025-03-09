@@ -2619,4 +2619,62 @@ footer .copyright span:last-child::after {
 	background: #000000;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map *//* Minimal Bootstrap Modal Styles */
+.modal {
+	position: fixed;
+	z-index: 1050;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+	position: relative;
+	width: 90%;
+	max-width: 500px;
+	margin: 100px auto;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+}
+
+.modal-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.modal-footer {
+	display: flex;
+	justify-content: center;
+    padding: inherit;
+}
+
+.modal-close {
+	cursor: pointer;
+	font-size: 20px;
+	border: none;
+	background: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.response {
+	margin-top: 20px;
+	text-align: left;
+	padding: 10px;
+	background: #e8e8e8;
+	border-radius: 5px;
+}
+
+.typing {
+	font-style: italic;
+	color: gray;
+}
+
