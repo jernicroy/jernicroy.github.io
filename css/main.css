@@ -2619,7 +2619,8 @@ footer .copyright span:last-child::after {
 	background: #000000;
 }
 
-/*# sourceMappingURL=main.css.map *//* Minimal Bootstrap Modal Styles */
+/*# sourceMappingURL=main.css.map */
+/* Minimal Bootstrap Modal Styles */
 .modal {
 	position: fixed;
 	z-index: 1050;
@@ -2666,7 +2667,7 @@ footer .copyright span:last-child::after {
 }
 
 .response {
-	margin-top: 20px;
+	margin-top: 0px;
 	text-align: left;
 	padding: 10px;
 	background: #e8e8e8;
@@ -2678,3 +2679,26 @@ footer .copyright span:last-child::after {
 	color: gray;
 }
 
+
+.section-divider {
+  border: 0;
+  border-top: 2px solid #ccc;
+  margin: 40px 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.875;
+  margin-bottom: 0.3rem;
+  letter-spacing: .4rem;
+  color: #FF0077;
+}
+
+.experience-heading {
+  text-transform: uppercase;       /* Make text all caps */
+  font-weight: bold; 
+  margin-top: 60px;                /* Add space above */
+  margin-bottom: 40px;             /* Add space below */
+  display: block;
+}
