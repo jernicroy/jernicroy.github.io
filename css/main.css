@@ -2702,3 +2702,36 @@ footer .copyright span:last-child::after {
   margin-bottom: 40px;             /* Add space below */
   display: block;
 }
+
+
+.project-points {
+  list-style: none;
+  margin-left: 10px;
+  padding-left: 0;
+}
+
+.project-points li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.project-points li::before {
+  content: "›";
+  color: #FF0077;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.email-link {
+	color: #ffffff !important;
+}
+
+.email-link:hover,
+.email-link:focus,
+.email-link:active {
+	color: #FF0077 !important;
+}
